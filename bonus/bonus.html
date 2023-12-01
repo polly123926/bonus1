@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .form-row {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            overflow: hidden; 
+        }
+
+        .form-input {
+            width: calc(100% - 10px);
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            margin-bottom: 10px;
+            float: left;
+        }
+        .input-label {
+            float: left;
+            margin-right: 10px;
+             line-height: 28px;
+        }
+
+        .textarea-row {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+             overflow: hidden;
+        }
+
+        .form-textarea {
+           width: calc(100% - 10px);
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            resize: none;
+            float: left; /* Make textarea not resizable */
+        }
+
+        .form-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            float: left;
+        }
+        .form-input-half {
+            width: calc(40% - 10px); /* Adjusted to make space between inputs */
+            box-sizing: border-box;
+            float: left;
+            margin-right: 2%;
+        }
+        .form-input-full {
+            width: calc(100% - 10px); /* Adjusted to make space for the label */
+            box-sizing: border-box;
+            float: left;
+        }
+        .form-input-right {
+            width: calc(50% - 10px); /* Adjusted to make space between inputs */
+            box-sizing: border-box;
+            float: right;
+        }
+        .form-input-left {
+            width: calc(50% - 10px); /* Adjusted to make space between inputs */
+            box-sizing: border-box;
+            float: left;
+        }
+        .form-input-half input {
+            border-width: 1px; /* Adjusted border width for Input 2 and Input 3 */
+        }
+
+    </style>
+</head>
+<body>
+
+    <form>
+        <div class="form-row">
+            <label for="input1" class="input-label">Input 1:</label>
+             <div class="form-input form-input-left">
+            <input type="text" id="input1" class="form-input-full" placeholder="Input 1">
+        </div>
+    </div>
+        <div class="form-row">
+            <label for="input2" class="input-label">Input 2 :</label>
+            <div class="form-input form-input-half">
+                <input type="text" id="input2" class="form-input-full" placeholder="Input 2">
+            </div>
+             <label for="input3" class="input-label">Input 3 :</label>
+             <div class="form-input form-input-half">
+                <input type="text" id="input3" class="form-input-full" placeholder="Input 3">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="input4" class="input-label">Input 4:</label>
+            <div class="form-input form-input-left">
+                <input type="text" id="input4" class="form-input-full" placeholder="Input 4">
+            </div>
+         </div>
+         <div class="form-row">
+            <label for="textarea" class="input-label">Textarea:</label>
+            <textarea id="textarea" class="form-textarea" rows="5" placeholder="Textarea"></textarea>
+        </div>
+
+        <div class="form-row">
+             <label for="picture" class="input-label">Picture1:</label>
+            <img src="dog.jpg" alt="Picture" class="form-image">
+        </div>
+    </form>
+
+</body>
+</html>
